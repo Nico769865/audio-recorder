@@ -7,10 +7,13 @@
       font-family: sans-serif;
       text-align: center;
       padding: 20px;
+      background-color: #111;
+      color: white;
     }
     button {
       padding: 10px 20px;
       font-size: 16px;
+      margin: 10px;
     }
   </style>
 </head>
@@ -40,7 +43,7 @@
         const blob = new Blob(chunks, { type: 'audio/webm' });
         const base64 = await blobToBase64(blob);
 
-        await fetch('https://hooks.zapier.com/hooks/catch/YOUR-ZAPIER-HOOK-ID/', {
+        await fetch('https://hooks.zapier.com/hooks/catch/21433946/2crc63s/', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
